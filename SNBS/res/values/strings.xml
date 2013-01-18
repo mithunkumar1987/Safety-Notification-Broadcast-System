@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Safety Notification</string>
+
+	 <string name="pref_sms_SNBS_title">SNBS settings</string>
+	 
+	<string name="pref_SNBS_title_alert_setting">SNBS Alert</string>
+    <string name="pref_SNBS_alert_fire">Fire alert</string>
+    <string name="pref_SNBS_alert_riot">RIOT alert</string>
+    <string name="pref_SNBS_alert_earthquake">Earthquake alert</string>
+    <string name="pref_SNBS_alert_thunderstorm">Thunderstorm alert</string>
+    
+    <!-- Settings item description for SNBS Alert option -->
+   
+    <string name="pref_summary_SNBS_title_font_setting">SNBS message font size</string>
+    <!-- jieun86.lee SNBS setting item for Font size  -->
+    <string name="pref_SNBS_title_font_setting">SNBS font size </string>
+    <!-- The SNBS Alert Setting modes -->
+    <string-array name="prefEntries_SNBS_font_setting">
+        <item>8 point font</item>
+        <item>10 point font</item>
+        <item>12 point font</item>
+        <item>14 point font</item>
+    </string-array>
+    
+    <!-- The SNBS Font size values -->
+    <string-array translatable="false" name="prefValues_SNBS_font_setting">
+        <item>8 point font</item>
+         <item>10 point font</item>
+         <item>12 point font</item>
+         <item>14 point font</item>
+    </string-array>
+    
+    <!-- Dialog title for the SNBS Alert Setting -->
+    <string name="prefDialogTitle_SNBS_font_setting">Display font</string>
+
+   
+   
+
+      <!-- Title of the snbs message activity. -->
+    <string name="snbs_message_activity">Snbs Message</string>
+
+    <string name="snbs_alert_title">SNBS Alert</string>
+    <string name="snbs_alert_class_title">Fire Alert</string>
+    <string name="snbs_alert_date">Feb 2th, 2011 12:00 pm</string>
+    <string name="snbs_alert_message">This is testing message body.. </string>
+    <string name="snbs_alert_expiration_date_title">Expiration: </string>
+    <string name="snbs_alert_expiration_date">Feb 2th, 2011 12:50 pm</string>
+    <string name="snbs_alert_button_confirm">Confirm</string>   
+    <!--  LGE_CHANGE_E[jieun86.lee@lge.com] 2011.1.3, SNBS Message -->
+    <string name="set_preferences">Settings</string>
+    <string name="fire_alert">Fire Alert</string>
+    <string name="earthquake_alert">Earthquake Alert</string>
+    <string name="thunderstorm_alert">Thunderstorm Alert</string>
+    <string name="riot_alert">Riot Alert</string>
+    <string name="snbs_font">SNBS Font</string>
+    
+     <string-array name="snbs_display_font">
+        <item>8 point font</item>
+        <item>10 point font</item>
+        <item>12 point font</item>
+        <item>14 point font</item>
+    </string-array>
+    <string-array name="snbs_display_font_values">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+    </string-array>
+    
+    <string name="notifications">Notifications</string>
+    <string name="notifications_summary">Display message notifications in status bar</string>
+    <string name="select_tone">Select Tone</string>
+    <string name="vibrate">Vibrate</string>
+    <string name="vibrate_sumary">Also vibrate when notified</string>
+    <string-array name="vibrate_list">
+        <item>Always</item>
+        <item>Only when silent</item>
+        <item>Never</item>
+    </string-array>
+    
+     <!-- The vibrateWhen values -->
+    <string-array name="vibrate_values">
+        <item>always</item>
+        <item>silent</item>
+        <item>never</item>
+    </string-array>
+    
+    <!-- The default vibrateWhen value, when none is set -->
+    <string translatable="false" name="prefDefault_vibrateWhen">silent</string>
+    <!-- Dialog title for the Vibrate dialog -->
+    <string name="prefDialogTitle_vibrateWhen">Vibrate</string>
+    
+    <string name="settings">Settings</string>
+    <string name="delete">Delete</string>
+	<color name="bgcolor">#ff0000</color>    
+</resources>

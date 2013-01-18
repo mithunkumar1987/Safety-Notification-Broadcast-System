@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"    
+    >
+	
+	<ImageView
+  	android:id="@+id/title_icon"
+  	android:layout_width="25dip"
+  	android:layout_height="25dip"
+  	android:layout_marginRight="6dip"
+  	android:src="@drawable/icon"/>
+		
+<TextView  
+	android:id="@+id/title_string"
+    android:layout_width="wrap_content" 
+    android:layout_height="fill_parent" 
+    android:textSize="15dip"
+    android:text="bye"
+    android:layout_marginTop="4dip"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    />
+</LinearLayout>

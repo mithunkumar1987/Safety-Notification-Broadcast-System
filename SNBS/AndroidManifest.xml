@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="edu.sdsu.mithun"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+ <uses-permission android:name="android.permission.RECEIVE_SMS" ></uses-permission>
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+    <application android:icon="@drawable/safety_alert" android:label="@string/app_name">
+        <activity android:name=".ui.ThreadListView"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MessageListView"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".util.Preferences"
+        		  android:label="@string/set_preferences">
+		</activity>
+		<activity android:name=".ui.SnbsPopUp"
+            android:label="@string/snbs_message_activity"
+            android:theme="@style/CmasAlertTheme"
+            android:launchMode="singleTop"
+            android:excludeFromRecents="true">
+        </activity>
+        <receiver android:name="edu.sdsu.mithun.transaction.SNBSBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.provider.Telephony.RECEIVED_SNBS" />
+			</intent-filter>
+		</receiver>
+        <service android:name="edu.sdsu.mithun.transaction.SNBSReceiverService"></service>
+        <service android:name="edu.sdsu.mithun.transaction.SNBSNotification"></service>
+        <service android:name=".transaction.SnbsPopUpManager" android:exported="true" />
+    </application>
+</manifest>

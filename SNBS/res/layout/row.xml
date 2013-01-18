@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="?android:attr/listPreferredItemHeight"
+  android:padding="6dip"
+  >
+  <ImageView
+  	android:id="@+id/icon"
+  	android:layout_width="52px"
+  	android:layout_height="52px"
+  	android:layout_marginRight="6dip"
+  	android:src="@drawable/icon"/>
+  	<LinearLayout
+  		android:orientation="vertical"
+  		android:layout_width="0dip"
+  		android:layout_weight="1"
+  		android:layout_marginRight="6dip"
+  		android:layout_height="wrap_content">
+  		<TextView
+  			android:id="@+id/cmas_class"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1" 
+  			android:textSize="20sp"
+  			android:textColor="#1f1f1f"
+  			android:gravity="center_vertical"/>
+  		<LinearLayout
+  		android:orientation="horizontal"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:gravity="center">
+  			<TextView 
+  			android:id="@+id/bottom_text"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1"
+  			android:textSize="13sp"
+  			android:singleLine="false"
+  			android:textColor="#008C8C"
+  			/>
+  			<TextView 
+  			android:id="@+id/cmas_date"
+  			android:layout_width="wrap_content"
+  			android:layout_height="wrap_content"
+  			android:layout_weight="1"
+  			android:gravity="right"
+  			android:textSize="13sp"
+  			android:singleLine="true"
+  			android:textColor="#008C8C"
+  			/>
+  			</LinearLayout>
+  			
+  		<!--
+		<TextView
+  			android:id="@+id/cmas_date"
+  			android:layout_width="150dip"
+  			android:layout_height="30dip"
+			
+  			android:layout_weight="1" 
+  			android:textSize="11sp"
+  			android:textColor="#FF0000"
+  			android:gravity="center_vertical"/>
+		
+		
+  	--></LinearLayout>
+</LinearLayout>
